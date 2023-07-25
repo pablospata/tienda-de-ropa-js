@@ -21,31 +21,206 @@
         </div>
 
         <div class="header-desktop">
-            <div>
-                <input type="text" placeholder="Buscar">
-                <button class="search-btn"></button>
+            <div class="header-desktop__search">
+                <div class="input-button-container">
+                    <input type="text" placeholder="Buscar">
+                    <button class="search-btn">
+                        <img class="logo-search" src="./assets/svg/search.svg" alt="" srcset="">
+                    </button>
+                </div>
             </div>
-            <div class="logo">
+            <div class="header-desktop__logo">
                 <img src="./assets/imgs/logo.jpg" alt="Logo de Brooksfield" srcset="">
+            </div>
+            <div class="header-desktop__iconos">
+                <div class="icono login-icono">
+                    <img class="logo-person" src="./assets/svg/person.svg" alt="" srcset="">
+                </div>
+                <div class="icono carrito-icono">
+                    <img class="logo-bag" src="./assets/svg/bag.svg" alt="" srcset="">
+                </div>
             </div>
         </div>
         <nav class="navbar">
-            <ul class="menu">
+            <ul class="menu--horizontal">
                 <li><a href="">HOMBRE</a></li>
                 <li><a href="">MUJER</a></li>
                 <li><a href="">FALL/WINTER</a></li>
                 <li><a href="">NEW ARRIVALS</a></li>
                 <li><a href="">LOOKBOOK</a></li>
-                <li><a href="">SALE!</a></li>
+                <li><a href="" class="promocion">SALE!</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="banner">
-            <h1>HOMBRE</h1>
+            <div class="banner-content">
+                <h1>HOMBRE</h1>
+            </div>
             <img src="./assets/imgs/banner-hombre.jpg" alt="Banner ropa de hombre">
         </div>
+
+        <div class="wrapper">
+            <aside class="filtros">
+                <h2>Filtrar por:</h2>
+                <div class="categorias">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Bermudas</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Buzos</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Camisas</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Pantalones</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Remeras</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Sweaters</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="categorias">
+                    <h4>Talle</h4>
+                    <ul>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Bermudas</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Buzos</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Camisas</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Pantalones</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Remeras</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Sweaters</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="categorias">
+                    <h4>Color</h4>
+                    <ul>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Bermudas</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Buzos</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Camisas</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Pantalones</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Remeras</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>
+                        <li>
+                            <div class="categoria">
+                                <input type="checkbox" class="checkbox">
+                                <p class="name">Sweaters</p>                    
+                            </div>                            
+                            <span class="count">(30)</span>
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="categorias">
+                    <h4>Precio</h4>
+                    
+                </div>
+            </aside>
+            <div class="inner-wrapper">
+                <div class="seleccion">
+                    <p>Mostrando 15 de 65 productos</p>
+                </div>
+                <div class="productos">
+
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
