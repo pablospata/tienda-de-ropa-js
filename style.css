@@ -150,8 +150,7 @@ button {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    /* background-color: red; */
+    gap: 30px;    
 }
 
 .filtros .categorias {
@@ -161,8 +160,7 @@ button {
 }
 
 .wrapper .inner-wrapper {
-    flex: 3;
-    /* background-color: green; */
+    flex: 3;    
 }
 
 .checkbox {
