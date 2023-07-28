@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Producto - CoderHouse</title>
+</head>
+
+<body>
+    <header>
+        <div class="envio">
+            <img class="logo-envio" src=".../assets/svg/icon_envios.svg" alt="" srcset="">
+            <p>ENVIOS GRATIS A TODO EL PAÍS DESDE $55000 | 3 y 6 CUOTAS SIN INTERÉS VISA, AMEX y MASTERCARD</p>
+        </div>
+
+        <div class="header-desktop">
+            <div class="header-desktop__search">
+                <div class="input-button-container">
+                    <input type="text" placeholder="Buscar">
+                    <button class="search-btn">
+                        <img class="logo-search" src=".../assets/svg/search.svg" alt="" srcset="">
+                    </button>
+                </div>
+            </div>
+            <div class="header-desktop__logo">
+                <img src="../assets/imgs/logo.jpg" alt="Logo de Brooksfield" srcset="">
+            </div>
+            <div class="header-desktop__iconos">
+                <div class="icono login-icono">
+                    <img class="logo-person" src="../assets/svg/person.svg" alt="" srcset="">
+                </div>
+                <div class="icono carrito-icono">
+                    <img class="logo-bag" src="../assets/svg/bag.svg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="menu--horizontal">
+                <li><a href="">HOMBRE</a></li>
+                <li><a href="">MUJER</a></li>
+                <li><a href="">FALL/WINTER</a></li>
+                <li><a href="">NEW ARRIVALS</a></li>
+                <li><a href="">LOOKBOOK</a></li>
+                <li><a href="" class="promocion">SALE!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="product-info">
+                <div class="imagenes">
+                    <img class="product-page imagen-principal" src="../assets/imgs/productos/hombre/image10.jpg"
+                        alt="Campera New Trento">
+                    <img class="product-page imagen-secundaria" src="../assets/imgs/productos/hombre/image11.jpg"
+                        alt="Campera New Trento">
+                </div>
+
+                <div class="descripciones">
+                    <h1 class="titulo">Campera New Trento</h1>
+                    <div class="container-talles">
+                        <h3 class="titulo-talle">Talle</h3>
+                        <div class="talles">
+                            <div class="talle-selecionado">
+                                <input type="radio" name="size" value="S">
+                                <p>S</p>
+                            </div>
+                            <div class="talle-selecionado">
+                                <input type="radio" name="size" value="M">
+                                <p>M</p>
+                            </div>
+                            <div class="talle-selecionado">
+                                <input type="radio" name="size" value="L">
+                                <p>L</p>
+                            </div>
+                            <div class="talle-selecionado">
+                                <input type="radio" name="size" value="M">
+                                <p>XL</p>
+                            </div>
+                            <div class="talle-selecionado">
+                                <input type="radio" name="size" value="M">
+                                <p>2XL</p>
+                            </div>
+                            <div class="talle-selecionado">
+                                <input type="radio" name="size" value="M">
+                                <p>3XL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-precio">
+                        <div class="producto__precio">$ 37.950 <span>IVA incluido</span></div>
+                        <div class="producto__cuotas">
+                            <p>Hasta 6 cuotas sin interés de $ 6.325</p>
+                        </div>
+                        <input type="number" name="cantidad" id="">
+                        <button>Comprar</button>                        
+                    </div>
+                    <div class="container-descripcion">
+                        <h3>Descripción</h3>
+                        <p>Campera New Trento: Esta campera New Trento combina elegancia y funcionalidad. El diseño
+                            contemporáneo y los materiales de primera calidad garantizan comodidad y estilo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../js/classes/Producto.js" defer></script>
+    <script src="../js/classes/Categoria.js" defer></script>
+    <script src="../js/data.js" defer></script>
+    <script src="../js/categorias.js" defer></script>
+    <!-- <script src="../js/producto.js" defer></script> -->
+
+</body>
+
+</html>

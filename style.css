@@ -150,7 +150,7 @@ button {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;    
+    gap: 30px;
 }
 
 .filtros .categorias {
@@ -160,7 +160,7 @@ button {
 }
 
 .wrapper .inner-wrapper {
-    flex: 3;    
+    flex: 3;
 }
 
 .checkbox {
@@ -217,7 +217,7 @@ button {
     border-bottom: 1px solid #D0D5DB;
 }
 
-.inner-wrapper .seleccion {
+.seleccion {
     padding: 12px 0;
     margin-top: 15px;
     border-top: 1px solid #D0D5DB;
@@ -228,21 +228,21 @@ button {
 
 .inner-wrapper .productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));    
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     justify-items: center;
 }
 
 .producto {
-    margin: 15px;   
-    overflow: hidden;    
+    margin: 15px;
+    overflow: hidden;
 }
 
 .producto:hover {
-    box-shadow: 0 0 25px 0 rgba(0,0,0,.15);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .15);
 }
 
-.producto__imagen { 
-    overflow: hidden;    
+.producto__imagen {
+    overflow: hidden;
 }
 
 .producto img {
@@ -287,4 +287,83 @@ button {
     font-size: 15px;
     font-weight: 700;
     color: #2e2323;
+}
+
+
+/* 
+======== || ========
+PAGINA DE PRODUCTOS
+======== || ========
+*/
+.product-info {
+    display: flex;
+}
+
+.product-info .imagenes {
+    flex: 1;
+}
+
+.product-info .descripciones {
+    flex: 1;
+}
+
+.product-info .titulo,
+.product-info .container-talles,
+.product-info .container-precio,
+.product-info .container-descripcion {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #D0D5DB;
+}
+
+.product-info .titulo {
+    font-size: 38px;
+}
+
+.product-info .talles {
+    display: flex;
+    width: 80%;
+    gap: 10px;
+}
+
+.product-info .talle-selecionado {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    border: 1px solid #2e2323;
+    padding: 5px;
+    width: 4rem;
+}
+
+.product-info .producto__precio {
+    font-size: 28px;    
+}
+
+.product-info .producto__precio span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.product-info input[type=number] {    
+    width: 15%; 
+    padding: 16px;
+    border: 1px solid #ccc;    
+    font-size: 16px;
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+}
+
+.product-info button {
+    width: 30%; 
+    font-size: 16px;
+    border: 1px solid black;    
+    background-color: black;
+    color: white;
+    padding: 16px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.product-info button:hover {
+    background-color: #2e2323;
 }
