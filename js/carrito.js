@@ -1,4 +1,4 @@
-document.querySelector('.boton-comprar').addEventListener('click', function () {
+document.querySelector('.boton-comprar').addEventListener('click', function () {    
     const titulo = document.querySelector('.titulo').innerText;
     const precio = document.querySelector('.producto__precio').innerText.replace('IVA incluido', '').trim();
     const cantidad = document.querySelector('input[name="cantidad"]').value;

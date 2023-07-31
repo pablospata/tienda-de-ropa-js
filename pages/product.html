@@ -58,7 +58,7 @@
 
     <main>
         <div class="wrapper">
-            <div class="product-info">
+            <div id="product-info" class="product-info">
                 <div class="imagenes">
                     <img class="product-page imagen-principal" src="../assets/imgs/productos/hombre/image10.jpg"
                         alt="Campera New Trento">
@@ -116,31 +116,29 @@
                 </div>
             </div>
         </div>
+        <div id="cart" class="cart">
+            <div class="cart-header">
+                <h2>Tu carrito</h2>
+                <button id="close-cart" class="close-cart">&times;</button>
+            </div>
+            <div id="cart-items"></div>
+            <div id="total">Total: $ 0</div>
+
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+
+        </div>
     </main>
 
-    <div id="cart" class="cart">
-        <div class="cart-header">            
-            <h2>Tu carrito</h2>
-            <button id="close-cart" class="close-cart">&times;</button>
-        </div>        
-        <div id="cart-items"></div>        
-        <div id="total">Total: $ 0</div>
-
-        <button id="vaciar-carrito">Vaciar Carrito</button>
-
-    </div>
-
     <footer>
-        <!-- Footer aquí -->
+
     </footer>
 
-    <script src="../js/carrito.js"></script>
-
     <script src="../js/classes/Producto.js" defer></script>
+    <script src="../js/carrito.js" defer></script>
     <script src="../js/classes/Categoria.js" defer></script>
     <script src="../js/data.js" defer></script>
     <script src="../js/categorias.js" defer></script>
-    <!-- <script src="../js/producto.js" defer></script> -->
+    <script src="../js/producto.js" defer></script>
 
 </body>
 

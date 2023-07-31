@@ -1,4 +1,3 @@
-
 /*
 Funcion para cargar la pagina de producto.
 
@@ -13,16 +12,53 @@ const productId = urlParams.get('id');
 let producto = productosArray.find(producto => producto.id == productId);
 
 // Si el producto existe, mostramos la información
-if(producto) {
+if (producto) {
     let productInfoDiv = document.getElementById('product-info');
 
     productInfoDiv.innerHTML = `
-        <h1>${producto.nombre}</h1>
-        <img src=".${producto.imagen1}" alt="${producto.nombre}">
-        <img src=".${producto.imagen2}" alt="${producto.nombre}">
-        <p>${producto.descripcion}</p>
-        <p>Precio: $${producto.precio.toLocaleString('de-DE')}</p>
-    `;
+            <div class="imagenes">
+            <img class="product-page imagen-principal" src=".${producto.imagen1}" alt="${producto.nombre}">
+            <img class="product-page imagen-secundaria" src=".${producto.imagen2}" alt="${producto.nombre}">
+            </div>
+            <div class="descripciones">
+                <h1 class="titulo">${producto.nombre}</h1>
+                <div class="container-talles">
+                    <h3 class="titulo-talle">Talle</h3>
+                    <div class="talles">
+                        <div class="talle-selecionado"><input type="radio" name="size" value="S"><p>S</p></div>
+                        <div class="talle-selecionado"><input type="radio" name="size" value="M"><p>M</p></div>
+                        <div class="talle-selecionado"><input type="radio" name="size" value="L" checked><p>L</p></div>
+                        <div class="talle-selecionado"><input type="radio" name="size" value="XL"><p>XL</p></div>
+                        <div class="talle-selecionado"><input type="radio" name="size" value="2XL"><p>2XL</p></div>
+                        <div class="talle-selecionado"><input type="radio" name="size" value="3XL"><p>3XL</p></div>
+                    </div>
+                </div>
+                <div class="container-precio">
+                    <div class="producto__precio">$${producto.precio.toLocaleString('de-DE')} <span>IVA incluido</span></div>
+                    <div class="producto__cuotas">
+                        <p>Hasta 6 cuotas sin interés de $ ${(producto.precio / 6).toLocaleString('de-DE')}</p>
+                    </div>
+                    <input type="number" name="cantidad" id="" value="1">
+                    <button class="boton-comprar">
+                        <img class="logo-bag" src="../assets/svg/bag2.svg" alt="" srcset="">
+                        Comprar
+                    </button>
+                </div>
+                <div class="container-descripcion">
+                    <h3>Descripción</h3>
+                    <p>${producto.descripcion}</p>
+                </div>
+            </div>
+            `;
+    document.querySelector('.boton-comprar').addEventListener('click', function () {
+        const titulo = document.querySelector('.titulo').innerText;
+        const precio = document.querySelector('.producto__precio').innerText.replace('IVA incluido', '').trim();
+        const cantidad = document.querySelector('input[name="cantidad"]').value;
+        const talle = document.querySelector('input[name="size"]:checked').value;
+
+        agregarAlCarrito(titulo, precio, cantidad, talle);
+        document.getElementById('cart').classList.add('open');
+    });
 } else {
     // Si el producto no existe, mostramos un mensaje de error
     productInfoDiv.innerHTML = "<p>Producto no encontrado.</p>";
