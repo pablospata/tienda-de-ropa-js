@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="envio">
-            <img class="logo-envio" src=".../assets/svg/icon_envios.svg" alt="" srcset="">
+            <img class="logo-envio" src="../assets/svg/icon_envios.svg" alt="" srcset="">
             <p>ENVIOS GRATIS A TODO EL PAÍS DESDE $55000 | 3 y 6 CUOTAS SIN INTERÉS VISA, AMEX y MASTERCARD</p>
         </div>
 
@@ -25,12 +25,14 @@
                 <div class="input-button-container">
                     <input type="text" placeholder="Buscar">
                     <button class="search-btn">
-                        <img class="logo-search" src=".../assets/svg/search.svg" alt="" srcset="">
+                        <img class="logo-search" src="../assets/svg/search.svg" alt="" srcset="">
                     </button>
                 </div>
             </div>
             <div class="header-desktop__logo">
-                <img src="../assets/imgs/logo.jpg" alt="Logo de Brooksfield" srcset="">
+                <a href="../index.html">
+                    <img src="../assets/imgs/logo.jpg" alt="Logo de Brooksfield" srcset="">
+                </a>
             </div>
             <div class="header-desktop__iconos">
                 <div class="icono login-icono">
@@ -38,6 +40,7 @@
                 </div>
                 <div class="icono carrito-icono">
                     <img class="logo-bag" src="../assets/svg/bag.svg" alt="" srcset="">
+                    <span id="cart-count" class="cart-count"></span>
                 </div>
             </div>
         </div>
@@ -77,19 +80,19 @@
                                 <p>M</p>
                             </div>
                             <div class="talle-selecionado">
-                                <input type="radio" name="size" value="L">
+                                <input type="radio" name="size" value="L" checked>
                                 <p>L</p>
                             </div>
                             <div class="talle-selecionado">
-                                <input type="radio" name="size" value="M">
+                                <input type="radio" name="size" value="XL">
                                 <p>XL</p>
                             </div>
                             <div class="talle-selecionado">
-                                <input type="radio" name="size" value="M">
+                                <input type="radio" name="size" value="2XL">
                                 <p>2XL</p>
                             </div>
                             <div class="talle-selecionado">
-                                <input type="radio" name="size" value="M">
+                                <input type="radio" name="size" value="3XL">
                                 <p>3XL</p>
                             </div>
                         </div>
@@ -99,8 +102,11 @@
                         <div class="producto__cuotas">
                             <p>Hasta 6 cuotas sin interés de $ 6.325</p>
                         </div>
-                        <input type="number" name="cantidad" id="">
-                        <button>Comprar</button>                        
+                        <input type="number" name="cantidad" id="" value="1">
+                        <button class="boton-comprar">
+                            <img class="logo-bag" src="../assets/svg/bag2.svg" alt="" srcset="">
+                            Comprar
+                        </button>
                     </div>
                     <div class="container-descripcion">
                         <h3>Descripción</h3>
@@ -112,9 +118,23 @@
         </div>
     </main>
 
-    <footer>
+    <div id="cart" class="cart">
+        <div class="cart-header">            
+            <h2>Tu carrito</h2>
+            <button id="close-cart" class="close-cart">&times;</button>
+        </div>        
+        <div id="cart-items"></div>        
+        <div id="total">Total: $ 0</div>
 
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+
+    </div>
+
+    <footer>
+        <!-- Footer aquí -->
     </footer>
+
+    <script src="../js/carrito.js"></script>
 
     <script src="../js/classes/Producto.js" defer></script>
     <script src="../js/classes/Categoria.js" defer></script>

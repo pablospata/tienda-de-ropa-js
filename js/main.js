@@ -105,3 +105,4 @@ function addListeners() {
 displayCategoriasItems(categoriasArray);
 displayProductosItems(productosArray);
 addListeners();
+
