@@ -1,6 +1,6 @@
 let botonComprar = document.querySelector('.boton-comprar');
 if (botonComprar) {
-    botonComprar.addEventListener('click', function () {    
+    botonComprar.addEventListener('click', function () {            
         const titulo = document.querySelector('.titulo').innerText;
         const precio = document.querySelector('.producto__precio').innerText.replace('IVA incluido', '').trim();
         const cantidad = document.querySelector('input[name="cantidad"]').value;
@@ -8,15 +8,6 @@ if (botonComprar) {
     
         agregarAlCarrito(titulo, precio, cantidad, talle);
 
-        Toastify({
-            text: "Producto Agregado",
-            duration: 3000,
-            gravity: 'bottom',
-            position: 'left',
-            style: {
-                background: 'linear-gradient(135deg, #f44336, #000000)'
-            }
-        }).showToast();
         document.getElementById('cart').classList.add('open');
     });
 }
@@ -92,5 +83,32 @@ function renderizarCarrito() {
 }
 
 document.querySelector('#vaciar-carrito').addEventListener('click', function () {
-    vaciarCarrito();
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: "¿Quieres vaciar el carrito?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, vaciar',
+        cancelButtonText: 'Cancelar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            vaciarCarrito();
+            Swal.fire(
+                'Vaciado',
+                'Tu carrito ha sido vaciado.',
+                'success'
+            )  
+            Toastify({
+                text: "Carrito vaciado",
+                duration: 3000,
+                gravity: 'bottom',
+                position: 'left',
+                style: {
+                    background: 'linear-gradient(135deg, #f44336, #000000)'
+                }
+            }).showToast();
+        }
+    })
 });
