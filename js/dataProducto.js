@@ -34,8 +34,8 @@ async function cargarProductos() {
 
             productInfoDiv.innerHTML = `
             <div class="imagenes">
-            <img class="product-page imagen-principal" src=".${producto.imagen1}" alt="${producto.nombre}">
-            <img class="product-page imagen-secundaria" src=".${producto.imagen2}" alt="${producto.nombre}">
+            <img class="product-page imagen-principal" src="${producto.imagen1}" alt="${producto.nombre}">
+            <img class="product-page imagen-secundaria" src="${producto.imagen2}" alt="${producto.nombre}">
             </div>
             <div class="descripciones">
                 <h1 class="titulo">${producto.nombre}</h1>
@@ -57,7 +57,7 @@ async function cargarProductos() {
                     </div>
                     <input type="number" name="cantidad" id="" value="1">
                     <button class="boton-comprar">
-                        <img class="logo-bag" src="../assets/svg/bag2.svg" alt="" srcset="">
+                        <img class="logo-bag" src="./assets/svg/bag2.svg" alt="" srcset="">
                         Comprar
                     </button>
                 </div>
