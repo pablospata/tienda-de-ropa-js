@@ -1,41 +1,23 @@
 let productosArray = [];
-let i = 1;
 
-productosArray.push(
-    new Producto(i++, 'Jean Roma Blue', 'Pantalones', 34490, './assets/imgs/productos/hombre/image0.jpg', './assets/imgs/productos/hombre/image1.jpg', 'Jean Roma Blue: Estos jeans de tono azul vibrante y corte clásico están confeccionados con materiales de alta calidad, garantizando resistencia y durabilidad sin sacrificar comodidad.'),
-    new Producto(i++, 'Camisa Conrad', 'Camisas', 36850, './assets/imgs/productos/hombre/image2.jpg', './assets/imgs/productos/hombre/image3.jpg', 'Camisa Conrad: Con un diseño elegante y una textura suave al tacto, esta camisa Conrad es el complemento perfecto para cualquier guardarropa. Su color sólido la hace versátil para cualquier ocasión.'),
-    new Producto(i++, 'Camisa Conrad', 'Camisas', 36850, './assets/imgs/productos/hombre/image4.jpg', './assets/imgs/productos/hombre/image5.jpg', 'Camisa Conrad: Esta camisa Conrad cuenta con un corte moderno y una confección de alta calidad. Perfecta para ocasiones formales y eventos de trabajo.'),
-    new Producto(i++, 'Camisa Conrad', 'Camisas', 36850, './assets/imgs/productos/hombre/image6.jpg', './assets/imgs/productos/hombre/image7.jpg', 'Camisa Conrad: Haz una declaración de estilo con nuestra camisa Conrad. Con su diseño minimalista y cómodo ajuste, es ideal para cualquier ocasión.'),
-    new Producto(i++, 'Camisa Conrad', 'Camisas', 36850, './assets/imgs/productos/hombre/image8.jpg', './assets/imgs/productos/hombre/image9.jpg', 'Camisa Conrad: Esta camisa Conrad de alta calidad aporta un toque sofisticado a cualquier conjunto. Ideal para uso diario o eventos especiales.'),
-    new Producto(i++, 'Campera New Trento', 'Buzos', 37950, './assets/imgs/productos/hombre/image10.jpg', './assets/imgs/productos/hombre/image11.jpg', 'Campera New Trento: Esta campera New Trento combina elegancia y funcionalidad. El diseño contemporáneo y los materiales de primera calidad garantizan comodidad y estilo.'),
-    new Producto(i++, 'Campera New Trento', 'Buzos', 37950, './assets/imgs/productos/hombre/image12.jpg', './assets/imgs/productos/hombre/image13.jpg', 'Campera New Trento: Con su estilo moderno y elegante, nuestra campera New Trento es perfecta para el clima frío. Hecha con material duradero y de alta calidad.'),
-    new Producto(i++, 'Campera New Trento', 'Buzos', 37950, './assets/imgs/productos/hombre/image14.jpg', './assets/imgs/productos/hombre/image15.jpg', 'Campera New Trento: La campera New Trento ofrece un diseño elegante y cómodo. Confeccionada con materiales de calidad, esta campera es perfecta para días fríos.'),
-    new Producto(i++, 'Campera New Trento', 'Buzos', 37950, './assets/imgs/productos/hombre/image16.jpg', './assets/imgs/productos/hombre/image17.jpg', 'Campera New Trento: Esta campera New Trento es esencial para cualquier guardarropa. Combina la resistencia y el calor de una campera de invierno con un diseño elegante y moderno.'),
-    new Producto(i++, 'Remera Print B6', 'Remeras', 12990, './assets/imgs/productos/hombre/image18.jpg', './assets/imgs/productos/hombre/image19.jpg', 'Remera Print B6: Con un diseño gráfico audaz, esta remera Print B6 es tan única como tú. Hecha de tela suave y cómoda, es perfecta para cualquier día.'),
-    new Producto(i++, 'Remera Print B2', 'Remeras', 12990, './assets/imgs/productos/hombre/image20.jpg', './assets/imgs/productos/hombre/image21.jpg', 'Remera Print B2: Esta remera Print B2 ofrece un diseño contemporáneo con un toque de diversión. Ideal para combinar con cualquier look.'),
-    new Producto(i++, 'Remera Print B2', 'Remeras', 12990, './assets/imgs/productos/hombre/image22.jpg', './assets/imgs/productos/hombre/image23.jpg', 'Remera Print B2: Con un diseño llamativo y un ajuste cómodo, esta remera Print B2 se convertirá rápidamente en tu favorita.'),
-    new Producto(i++, 'Remera Print B3', 'Remeras', 12990, './assets/imgs/productos/hombre/image24.jpg', './assets/imgs/productos/hombre/image25.jpg', 'Remera Print B3: Esta remera Print B3 presenta un diseño gráfico moderno, ideal para agregar un toque de estilo a tu vestuario diario.'),
-    new Producto(i++, 'Remera Print B3', 'Remeras', 12990, './assets/imgs/productos/hombre/image26.jpg', './assets/imgs/productos/hombre/image27.jpg', 'Remera Print B3: Con su diseño único y su tela suave, esta remera Print B3 es perfecta para cualquier ocasión.'),
-    new Producto(i++, 'Perfume Adventure Hombre', 'Fragancias', 9995, './assets/imgs/productos/hombre/image28.jpg', './assets/imgs/productos/hombre/image29.jpg', 'Perfume Adventure Hombre: Un aroma audaz y emocionante, nuestro Perfume Adventure para hombre es la esencia de la aventura. Con notas de madera y cítricos, es una fragancia fresca y vibrante.'),
-    new Producto(i++, 'Remera Verona', 'Remeras', 15790, './assets/imgs/productos/hombre/image30.jpg', './assets/imgs/productos/hombre/image31.jpg', 'Remera Verona: Esta remera Verona ofrece un ajuste cómodo y un diseño simple. Hecha de algodón de alta calidad, es suave al tacto y duradera.'),
-    new Producto(i++, 'Remera Verona', 'Remeras', 15790, './assets/imgs/productos/hombre/image32.jpg', './assets/imgs/productos/hombre/image33.jpg', 'Remera Verona: Con un estilo clásico y una tela suave, nuestra remera Verona es un básico imprescindible para tu guardarropa.'),
-    new Producto(i++, 'Remera Verona', 'Remeras', 15790, './assets/imgs/productos/hombre/image34.jpg', './assets/imgs/productos/hombre/image35.jpg', 'Remera Verona: La remera Verona combina un diseño minimalista con comodidad suprema. Es perfecta para cualquier ocasión, ya sea formal o casual.'),
-    new Producto(i++, 'Canguro New Coel', 'Buzos', 34490, './assets/imgs/productos/hombre/image36.jpg', './assets/imgs/productos/hombre/image37.jpg', 'Canguro New Coel: Este canguro New Coel es un complemento moderno y versátil. Con su diseño espacioso y su comodidad, es ideal para cualquier actividad al aire libre.'),
-    new Producto(i++, 'Canguro New Coel', 'Buzos', 34490, './assets/imgs/productos/hombre/image38.jpg', './assets/imgs/productos/hombre/image39.jpg', 'Canguro New Coel: Con un diseño moderno y un ajuste cómodo, este canguro New Coel es la elección perfecta para llevar tus pertenencias con estilo.'),
-    new Producto(i++, 'Campera Lussari', 'Camperas', 51790, './assets/imgs/productos/hombre/image40.jpg', './assets/imgs/productos/hombre/image41.jpg', 'Campera Lussari: Esta campera Lussari es elegante y funcional. Su diseño contemporáneo y su comodidad la hacen perfecta para cualquier temporada.'),
-    new Producto(i++, 'Campera Lussari', 'Camperas', 51790, './assets/imgs/productos/hombre/image42.jpg', './assets/imgs/productos/hombre/image43.jpg', 'Campera Lussari: Confeccionada con materiales de alta calidad, esta campera Lussari ofrece estilo y confort en un solo paquete. Es resistente, duradera y elegante.'),
-    new Producto(i++, 'Campera Lussari', 'Camperas', 51790, './assets/imgs/productos/hombre/image44.jpg', './assets/imgs/productos/hombre/image45.jpg', 'Campera Lussari: Esta campera Lussari es un básico imprescindible para cualquier guardarropa. Su diseño moderno y su calidez la hacen ideal para los meses más fríos.'),
-    new Producto(i++, 'Campera Lussari', 'Camperas', 51790, './assets/imgs/productos/hombre/image46.jpg', './assets/imgs/productos/hombre/image47.jpg', 'Campera Lussari: Con un diseño elegante y un ajuste cómodo, esta campera Lussari es el complemento perfecto para cualquier conjunto.'),
-    new Producto(i++, 'Chaleco Civetta', 'Camperas', 48390, './assets/imgs/productos/hombre/image48.jpg', './assets/imgs/productos/hombre/image49.jpg', 'Chaleco Civetta: Este chaleco Civetta combina elegancia y funcionalidad. Hecho de material de alta calidad, ofrece durabilidad y comodidad.'),
-    new Producto(i++, 'Chaleco Civetta', 'Camperas', 48390, './assets/imgs/productos/hombre/image50.jpg', './assets/imgs/productos/hombre/image51.jpg', 'Chaleco Civetta: Con su diseño minimalista y su comodidad, este chaleco Civetta es perfecto para cualquier ocasión. Es una pieza versátil que puede vestirse arriba o abajo.'),
-    new Producto(i++, 'Pantalón Chino Fairbanks', 'Pantalones', 35950, './assets/imgs/productos/hombre/image52.jpg', './assets/imgs/productos/hombre/image53.jpg', 'Pantalón Chino Fairbanks: Este pantalón chino Fairbanks ofrece un ajuste cómodo y un diseño moderno. Hecho de material de alta calidad, es duradero y resistente.'),
-    new Producto(i++, 'Pantalón Chino Fairbanks', 'Pantalones', 35950, './assets/imgs/productos/hombre/image54.jpg', './assets/imgs/productos/hombre/image55.jpg', 'Pantalón Chino Fairbanks: Con su estilo clásico y su corte contemporáneo, este pantalón chino Fairbanks es un imprescindible para cualquier guardarropa.'),
-    new Producto(i++, 'Pantalón Chino Fairbanks', 'Pantalones', 35950, './assets/imgs/productos/hombre/image56.jpg', './assets/imgs/productos/hombre/image57.jpg', 'Pantalón Chino Fairbanks: Este pantalón chino Fairbanks es elegante y versátil. Su diseño moderno lo hace ideal para cualquier ocasión, ya sea casual o formal.'),
-    new Producto(i++, 'Pantalón Chino Fairbanks', 'Pantalones', 35950, './assets/imgs/productos/hombre/image58.jpg', './assets/imgs/productos/hombre/image59.jpg', 'Pantalón Chino Fairbanks: Hecho de material de alta calidad, este pantalón chino Fairbanks es duradero y cómodo. Su diseño clásico lo hace una elección perfecta para cualquier outfit.'),
-    new Producto(i++, 'Sweater Milan', 'Sweaters', 26995, './assets/imgs/productos/hombre/image60.jpg', './assets/imgs/productos/hombre/image61.jpg', 'Sweater Milan: Este sweater Milan combina comodidad y estilo. Hecho de material suave y cálido, es perfecto para los meses más fríos.'),
-    new Producto(i++, 'Sweater Milan', 'Sweaters', 24296, './assets/imgs/productos/hombre/image62.jpg', './assets/imgs/productos/hombre/image63.jpg', 'Sweater Milan: Con su diseño elegante y su ajuste cómodo, este sweater Milan es una elección perfecta para cualquier día.'),
-    new Producto(i++, 'Sweater New Milan', 'Sweaters', 26995, './assets/imgs/productos/hombre/image64.jpg', './assets/imgs/productos/hombre/image65.jpg', 'Sweater New Milan: Este Sweater New Milan presenta un diseño contemporáneo y una confección de alta calidad. Su tejido suave y cálido lo convierte en una elección ideal para el clima frío.'),
-    new Producto(i++, 'Sweater Milan', 'Sweaters', 26995, './assets/imgs/productos/hombre/image66.jpg', './assets/imgs/productos/hombre/image67.jpg', 'Sweater Milan: Con su estilo minimalista y su comodidad, este sweater Milan es un básico imprescindible para cualquier guardarropa.'),
-    new Producto(i++, 'Perfume Adventure Hombre', 'Fragancias', 21900, './assets/imgs/productos/hombre/image68.jpg', './assets/imgs/productos/hombre/image69.jpg', 'Perfume Adventure Hombre: Con notas de madera y cítricos, nuestro Perfume Adventure para hombre evoca la emoción de la aventura. Es una fragancia masculina audaz y vibrante.'),
-    new Producto(i++, 'Remera Duck Embroidery', 'Remeras', 12550, './assets/imgs/productos/hombre/image70.jpg', './assets/imgs/productos/hombre/image71.jpg', 'Remera Duck Embroidery: Esta remera Duck Embroidery ofrece un diseño único y divertido. Hecha de tela suave y cómoda, es perfecta para cualquier día.')
-);
+async function cargarProductos() {
+    try {
+        let respuesta = await fetch('./js/productos.json');  // Ajusta la ruta si es necesario
+        if (!respuesta.ok) {
+            throw new Error('Error al obtener el archivo JSON');
+        }
+        let productosJSON = await respuesta.json();
+
+        productosJSON.forEach(p => {
+            productosArray.push(new Producto(p.id, p.nombre, p.categoria, p.precio, p.imagen1, p.imagen2, p.descripcion));
+        });
+        
+        displayProductosItems(productosArray);
+        addListeners();
+
+    } catch (error) {
+        console.error('Hubo un problema con la petición fetch:', error.message);
+    }
+}
+
+cargarProductos();

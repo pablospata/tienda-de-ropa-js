@@ -462,10 +462,8 @@ CARRITO DE PRODUCTOS
 
 #vaciar-carrito {
     background-color: #f44336;
-    /* Color rojo */
     border: none;
     color: white;
-    /* Texto blanco */
     padding: 12px 20px;
     text-align: center;
     font-size: 16px;
@@ -474,14 +472,18 @@ CARRITO DE PRODUCTOS
     display: inline-block;
     margin: 10px 0;
     border-radius: 4px;
-    /* Bordes redondeados */
 }
 
 #vaciar-carrito:hover {
     background-color: #f44336d1;
-    /* Color rojo un poco más claro en el hover */
 }
 
+
+/* 
+========== || ==========
+PAGINA EN CONSTRUCCION
+========== || ==========
+*/
 
 main .construction-page {
     font-family: Arial, sans-serif;
