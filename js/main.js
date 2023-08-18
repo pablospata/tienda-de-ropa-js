@@ -106,3 +106,31 @@ displayCategoriasItems(categoriasArray);
 displayProductosItems(productosArray);
 addListeners();
 
+
+function buscarProductos() {
+    const buscador = document.getElementById('buscador');
+    
+    buscador.addEventListener('input', () => {
+        const textoBusqueda = buscador.value.trim().toLowerCase();
+        
+        if(textoBusqueda === "") {
+            displayProductosItems(productosArray); 
+        } else {
+            const productosFiltrados = productosArray.filter(producto => {
+                return producto.nombre.toLowerCase().includes(textoBusqueda); 
+            });
+
+            if(productosFiltrados.length === 0) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'No se encontraron productos que coincidan con tu búsqueda.',
+                });
+            } else {
+                displayProductosItems(productosFiltrados);
+            }
+        }
+    });
+}
+
+buscarProductos();
