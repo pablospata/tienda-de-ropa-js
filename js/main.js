@@ -13,7 +13,7 @@ function displayProductosItems(productosItems) {
         return `
                 <article class="producto">
                     <div class="producto__imagen">
-                        <a href="./pages/product.html?id=${item.id}">
+                        <a href="./product.html?id=${item.id}">
                             <img src=${item.imagen1} alt=${item.nombre}>
                         </a>
                     </div>                    
