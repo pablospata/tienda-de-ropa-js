@@ -7,6 +7,16 @@ if (botonComprar) {
         const talle = document.querySelector('input[name="size"]:checked').value;
     
         agregarAlCarrito(titulo, precio, cantidad, talle);
+
+        Toastify({
+            text: "Producto Agregado",
+            duration: 3000,
+            gravity: 'bottom',
+            position: 'left',
+            style: {
+                background: 'linear-gradient(135deg, #f44336, #000000)'
+            }
+        }).showToast();
         document.getElementById('cart').classList.add('open');
     });
 }
