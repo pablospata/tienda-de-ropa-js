@@ -1,12 +1,15 @@
-document.querySelector('.boton-comprar').addEventListener('click', function () {    
-    const titulo = document.querySelector('.titulo').innerText;
-    const precio = document.querySelector('.producto__precio').innerText.replace('IVA incluido', '').trim();
-    const cantidad = document.querySelector('input[name="cantidad"]').value;
-    const talle = document.querySelector('input[name="size"]:checked').value;
-
-    agregarAlCarrito(titulo, precio, cantidad, talle);
-    document.getElementById('cart').classList.add('open');
-});
+let botonComprar = document.querySelector('.boton-comprar');
+if (botonComprar) {
+    botonComprar.addEventListener('click', function () {    
+        const titulo = document.querySelector('.titulo').innerText;
+        const precio = document.querySelector('.producto__precio').innerText.replace('IVA incluido', '').trim();
+        const cantidad = document.querySelector('input[name="cantidad"]').value;
+        const talle = document.querySelector('input[name="size"]:checked').value;
+    
+        agregarAlCarrito(titulo, precio, cantidad, talle);
+        document.getElementById('cart').classList.add('open');
+    });
+}
 
 document.querySelector('#close-cart').addEventListener('click', function () {
     document.getElementById('cart').classList.remove('open');

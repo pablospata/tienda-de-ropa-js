@@ -389,7 +389,7 @@ CARRITO DE PRODUCTOS
 
 .carrito-icono {
     cursor: pointer;
-    position: relative; 
+    position: relative;
 }
 
 .cart-count {
@@ -400,12 +400,12 @@ CARRITO DE PRODUCTOS
     right: 0px;
     background: #666;
     color: white;
-    border-radius: 50%;    
+    border-radius: 50%;
     font-size: 11px;
-    display: none;     
+    display: none;
 }
 
-.cart-count.show {    
+.cart-count.show {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,7 +413,7 @@ CARRITO DE PRODUCTOS
 
 .cart {
     position: fixed;
-    right: -350px;    
+    right: -350px;
     top: 0;
     width: 350px;
     height: 100%;
@@ -427,15 +427,13 @@ CARRITO DE PRODUCTOS
 .cart .cart-header {
     display: flex;
     justify-content: space-between;
-    
+
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid #D0D5DB;
 }
 
-.cart h2 {    
-    
-}
+.cart h2 {}
 
 .cart #total {
     padding-top: 15px;
@@ -463,9 +461,11 @@ CARRITO DE PRODUCTOS
 }
 
 #vaciar-carrito {
-    background-color: #f44336; /* Color rojo */
+    background-color: #f44336;
+    /* Color rojo */
     border: none;
-    color: white; /* Texto blanco */
+    color: white;
+    /* Texto blanco */
     padding: 12px 20px;
     text-align: center;
     font-size: 16px;
@@ -473,10 +473,58 @@ CARRITO DE PRODUCTOS
     transition: 0.3s;
     display: inline-block;
     margin: 10px 0;
-    border-radius: 4px; /* Bordes redondeados */
-  }
-  
-  #vaciar-carrito:hover {
-    background-color: #f44336d1; /* Color rojo un poco más claro en el hover */
-  }
-  
+    border-radius: 4px;
+    /* Bordes redondeados */
+}
+
+#vaciar-carrito:hover {
+    background-color: #f44336d1;
+    /* Color rojo un poco más claro en el hover */
+}
+
+
+main .construction-page {
+    font-family: Arial, sans-serif;
+    height: 70vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.construction-page .container {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #bbb;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.construction-page .container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.construction-page .container p {
+    font-size: 18px;
+}
+
+.construction-page .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.construction-page .button:hover {
+    background-color: #555;
+}

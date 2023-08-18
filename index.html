@@ -36,21 +36,22 @@
             </div>
             <div class="header-desktop__iconos">
                 <div class="icono login-icono">
-                    <img class="logo-person" src="./assets/svg/person.svg" alt="" srcset="">
+                    <img class="logo-person" src="../assets/svg/person.svg" alt="" srcset="">
                 </div>
                 <div class="icono carrito-icono">
-                    <img class="logo-bag" src="./assets/svg/bag.svg" alt="" srcset="">
+                    <img class="logo-bag" src="../assets/svg/bag.svg" alt="" srcset="">
+                    <span id="cart-count" class="cart-count"></span>
                 </div>
             </div>
         </div>
         <nav class="navbar">
             <ul class="menu--horizontal">
-                <li><a href="">HOMBRE</a></li>
-                <li><a href="">MUJER</a></li>
-                <li><a href="">FALL/WINTER</a></li>
-                <li><a href="">NEW ARRIVALS</a></li>
-                <li><a href="">LOOKBOOK</a></li>
-                <li><a href="" class="promocion">SALE!</a></li>
+                <li><a href="./index.html">HOMBRE</a></li>
+                <li><a href="./pages/pagina-en-construccion.html">MUJER</a></li>
+                <li><a href="./pages/pagina-en-construccion.html">FALL/WINTER</a></li>
+                <li><a href="./pages/pagina-en-construccion.html">NEW ARRIVALS</a></li>
+                <li><a href="./pages/pagina-en-construccion.html">LOOKBOOK</a></li>
+                <li><a href="./pages/pagina-en-construccion.html" class="promocion">SALE!</a></li>
             </ul>
         </nav>
     </header>
@@ -82,6 +83,18 @@
                 <div class="productos"></div>
             </div>
         </div>
+
+        <div id="cart" class="cart">
+            <div class="cart-header">
+                <h2>Tu carrito</h2>
+                <button id="close-cart" class="close-cart">&times;</button>
+            </div>
+            <div id="cart-items"></div>
+            <div id="total">Total: $ 0</div>
+
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+
+        </div>
     </main>
 
     <footer>
@@ -89,6 +102,7 @@
     </footer>
 
     <script src="./js/classes/Producto.js" defer></script>
+    <script src="./js/carrito.js" defer></script>
     <script src="./js/classes/Categoria.js" defer></script>
     <script src="./js/data.js" defer></script>
     <script src="./js/categorias.js" defer></script>
