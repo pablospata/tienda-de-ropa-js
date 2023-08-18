@@ -478,6 +478,44 @@ CARRITO DE PRODUCTOS
     background-color: #f44336d1;
 }
 
+#finalizar-compra {
+    background-color: #012513;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+#finalizar-compra:hover {
+    background-color: #310602d1;
+}
+
+#seguir-comprando {
+    background-color: #512fe7;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+#seguir-comprando:hover {
+    background-color: #512fe7d1;
+}
+
+
+
 
 /* 
 ========== || ==========

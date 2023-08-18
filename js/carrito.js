@@ -83,6 +83,12 @@ function renderizarCarrito() {
 }
 
 document.querySelector('#vaciar-carrito').addEventListener('click', function () {
+    const carrito = JSON.parse(localStorage.getItem('carrito') || '[]');
+    if (carrito.length === 0) {
+        Swal.fire('¡El carrito está vacío!', 'Sigue comprando...', 'warning');
+        return;
+    }
+    
     Swal.fire({
         title: '¿Estás seguro?',
         text: "¿Quieres vaciar el carrito?",
@@ -111,4 +117,29 @@ document.querySelector('#vaciar-carrito').addEventListener('click', function () 
             }).showToast();
         }
     })
+});
+
+function enviarPorWhatsApp() {
+    const carrito = JSON.parse(localStorage.getItem('carrito') || '[]');
+    if (carrito.length === 0) {
+        Swal.fire('¡El carrito está vacío!', 'Sigue comprando...', 'warning');
+        return;
+    }
+    
+    let mensaje = "Detalles de la compra:\n";
+    carrito.forEach(item => {
+        mensaje += `${item.titulo} - ${item.talle} - ${item.cantidad} x ${item.precio}\n`;
+    });
+    const total = document.getElementById('total').innerText;
+    mensaje += total;
+
+    const numeroWhatsApp = "5492345400586";
+    const mensajeCodificado = encodeURIComponent(mensaje);
+    const urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensajeCodificado}`;
+    
+    window.open(urlWhatsApp, '_blank');
+}
+
+document.querySelector('#finalizar-compra').addEventListener('click', function () {
+    enviarPorWhatsApp();
 });
