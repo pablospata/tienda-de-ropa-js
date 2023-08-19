@@ -2,7 +2,6 @@
 
 Proyecto Final para el curso de JavaScript de Coderhouse (Agosto 2023). Es un e-commerce para una tienda de ropa construido con HTML, CSS y JavaScript.
 
-Vista previa:
 ![Vista previa](./assets/imgs/vista-previa-1.png)
 ![Vista previa](./assets/imgs/vista-previa-2.png)
 
